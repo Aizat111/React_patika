@@ -42,5 +42,5 @@ async function getData(){
     console.log("users",users);
     console.log("post1",post1);
 }
-
+//asyns ve await kullanarak sıralı çalışma sağlayabiliriz
 getData();
