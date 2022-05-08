@@ -21,11 +21,18 @@ class Collapse extends React.Component {
     this.setState({showContent:!this.state.showContent})
   }
 
+  componentDidMount(){
+    console.log("Component oluşturuldu")
+  }
+  componentDidUpdate(){
+    console.log("Component güncellendi")
+  }
+
   render(){
     return (
       <div>
           <button className="btn btn-primary w-100" onClick={this.showMore}>
-            Click to open card
+         {this.props.children.props.cardTitle}
           </button>
 
         {
